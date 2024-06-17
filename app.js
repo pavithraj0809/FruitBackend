@@ -13,11 +13,12 @@ app.use(express.urlencoded({extended:false}));
 app.use("/api",router);
 
 
-mongoose.connect('mongodb://localhost:27017/pavi').then((req,res)=>{
+mongoose.connect('mongodb+srv://pavithra:pavi@cluster0.r1waizr.mongodb.net/').then((req,res)=>{
     console.log("Database Connected");
 }).catch((error)=>{
     console.log("error occures in DB");
 })
+.
 
 
 
