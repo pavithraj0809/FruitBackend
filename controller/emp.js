@@ -24,7 +24,7 @@ const postdata=async (req,res)=>{
 }
 const getdata=async(req,res)=>{
     try{
-        const getdata=await ordermodalmodal.find()
+        const getdata=await ordermodal.find()
         res.status(200).json(getdata)
 
     }catch(error){

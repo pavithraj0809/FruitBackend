@@ -10,6 +10,10 @@ app.use(cors());
 app.use(cors({orgin:"*"}))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+router.get('/',(req,res)=>{
+    res.send("Welcome to fruit back end");
+})
+
 app.use("/api",router);
 
 
@@ -21,9 +25,6 @@ mongoose.connect('mongodb+srv://pavithra:pavi@cluster0.r1waizr.mongodb.net/one')
     console.log("error occures in DB");
 })
 
-router.get('/',(req,res)=>{
-    res.send("Welcome to fruit back end");
-})
 
 
 
