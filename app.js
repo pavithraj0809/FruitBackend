@@ -15,7 +15,7 @@ app.use("/api",router);
 
 
 
-mongoose.connect('mongodb+srv://pavithra:pavi@cluster0.r1waizr.mongodb.net/').then((req,res)=>{
+mongoose.connect('mongodb+srv://pavithra:pavi@cluster0.r1waizr.mongodb.net/one').then((req,res)=>{
     console.log("Database Connected");
 }).catch((error)=>{
     console.log("error occures in DB");
