@@ -10,7 +10,7 @@ app.use(cors());
 app.use(cors({orgin:"*"}))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-router.get('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send("Welcome to fruit back end");
 })
 
