@@ -2,7 +2,7 @@ const express=require('express');
 const mongoose=require('mongoose');
 const cors=require('cors');
 const app=express();
-const port=3001;
+
 const router=require('./router/router');
 
 
@@ -24,10 +24,8 @@ mongoose.connect('mongodb+srv://pavithra:pavi@cluster0.r1waizr.mongodb.net/one')
 router.get('/',(req,res)=>{
     res.send("Welcome to fruit back end");
 })
-.
 
 
 
-app.listen(port,()=>{
-    console.log("Sever Started");
-})
+
+module.exports=app;
